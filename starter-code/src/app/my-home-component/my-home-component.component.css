@@ -1,0 +1,27 @@
+.movies {
+    text-align: center;
+    display: flex;
+}
+
+.oneMovie img{
+  width: 200px;
+  max-height: 300px;
+}
+
+.seeSchedule {
+    width: 180px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 10px;
+    background: gray;
+}
+
+.seeSchedule a{
+  text-decoration: none;
+  color: white;
+}
+
+.oneMovie {
+    margin-right: 40px;
+}

@@ -12,9 +12,6 @@ export class CinemaService {
   }
 
   getMovie(id){
-    for (let x = 0; x < this.movies.length; x++){
-      if (this.movies[x].id == id)
-        return this.movies[x]
-    }
+    return this.movies.filter(e=> e.id == id)[0];
   }
 }

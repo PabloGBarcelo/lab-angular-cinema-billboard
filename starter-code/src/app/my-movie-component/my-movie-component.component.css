@@ -1,0 +1,23 @@
+.menu {
+    text-align: center;
+}
+
+.image {
+  width: 40%;
+  display: inline-block;
+}
+
+.image img{
+  width: 70%;
+}
+
+.movie {
+    width: 100%;
+    margin-top: 4%;
+}
+
+.data{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}

@@ -1,4 +1,18 @@
-{{ movie.title }}
-<p>
-  my-movie-component works!
-</p>
+<nav class="menu">
+  <a [routerLink] = "['../../home']"> Go to the menu </a>
+</nav>
+<div class="movie">
+  <div class="image">
+    <img [src]="movie.poster">
+  </div>
+  <div class="data">
+    <h2>{{ movie.title }}</h2><br>
+    Sinopsis: <p>{{ movie.synopsis }}</p>
+    Género: <p>{{ movie.genres }}</p>
+    <p>{{ movie.year }}</p>
+    Director:<p>{{ movie.director }}</p>
+    Reparto: <p>{{ movie.actors }}</p>
+  <p>{{ movie.hours }}
+    {{ movie.room }}</p>
+  </div>
+</div>

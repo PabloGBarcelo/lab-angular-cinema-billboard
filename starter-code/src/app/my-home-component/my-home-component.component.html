@@ -1,9 +1,10 @@
-<p>
-  my-home-component works!
-</p>
-<ul>
-<li *ngFor="let movie of myMovies">
-  {{ movie.title }}
-  <a [routerLink] = "['..','movie', movie.id]">ENLACE</a>
-</li>
-</ul>
+<div class="movies">
+  <div class="oneMovie" *ngFor="let movie of myMovies">
+    {{ movie.title }}
+    <br><br>
+    SALA {{ movie.room }}
+    <br><br>
+    <img [src]= "movie.poster">
+    <p class="seeSchedule"><a [routerLink] = "['..','movie', movie.id]">VER HORARIO</a></p>
+  </div>
+</div>

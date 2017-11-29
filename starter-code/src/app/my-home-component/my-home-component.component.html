@@ -1,3 +1,9 @@
 <p>
   my-home-component works!
 </p>
+<ul>
+<li *ngFor="let movie of myMovies">
+  {{ movie.title }}
+  <a [routerLink] = "['..','movie', movie.id]">ENLACE</a>
+</li>
+</ul>

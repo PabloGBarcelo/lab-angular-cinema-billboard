@@ -1,26 +1,20 @@
 import { Injectable } from '@angular/core';
-interface moviesInterface{
-  id:number,
-  title:string,
-  poster:string,
-  synopsis:string,
-  genres:Array<string>,
-  year:number,
-  director:string,
-  actors:Array<string>,
-  hours:Array<string>,
-  room:number
-}
+import moviesList from '../../sample-movies';
+
 @Injectable()
 export class CinemaService {
-  movies:Array<moviesInterface>;
+  movies = moviesList;
   constructor() { }
-
+  ngOnInit() {
+  }
   getMovies(){
     return this.movies;
   }
 
   getMovie(id){
-    return this.movies.filter(e => e.id==id);
+    for (let x = 0; x < this.movies.length; x++){
+      if (this.movies[x].id == id)
+        return this.movies[x]
+    }
   }
 }
